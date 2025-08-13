@@ -38,48 +38,49 @@ Está desarrollado utilizando estructuras basicas  de control tales como:
 
 # Pseudocódigo
 
-	codigo = """def menu_registro_notas():
-   	opcion = 0
+	PROCEDIMIENTO menu_registro_notas()
+    opcion ← 0
 
-    while opcion != 6:
-        print("\\nMENÚ PRINCIPAL - REGISTRO DE NOTAS")
-        print("1. Ingresar nota de estudiante")
-        print("2. Modificar nota existente")
-        print("3. Eliminar nota")
-        print("4. Mostrar todas las notas")
-        print("5. Calcular promedio general")
-        print("6. Salir")
+    MIENTRAS opcion ≠ 6 HACER
+        IMPRIMIR ""
+        IMPRIMIR "MENÚ PRINCIPAL - REGISTRO DE NOTAS"
+        IMPRIMIR "1. Ingresar nota de estudiante"
+        IMPRIMIR "2. Modificar nota existente"
+        IMPRIMIR "3. Eliminar nota"
+        IMPRIMIR "4. Mostrar todas las notas"
+        IMPRIMIR "5. Calcular promedio general"
+        IMPRIMIR "6. Salir"
 
-        try:
-            opcion = int(input("Ingrese una opción: "))
-        except ValueError:
-            print("Entrada no válida. Debe ser un número.")
-            continue
+        LEER opcion
 
-        if opcion == 1:
-            print("Ingresando nota...")
-            # <acción para ingresar nota>
+        SI opcion = 1 ENTONCES
+            IMPRIMIR "Ingresando nota..."
+            // Acción para ingresar nota
 
-        elif opcion == 2:
-            print("Modificando nota...")
-            # <acción para modificar nota>
+        SINO SI opcion = 2 ENTONCES
+            IMPRIMIR "Modificando nota..."
+            // Acción para modificar nota
 
-        elif opcion == 3:
-            print("Eliminando nota...")
-            # <acción para eliminar nota>
+        SINO SI opcion = 3 ENTONCES
+            IMPRIMIR "Eliminando nota..."
+            // Acción para eliminar nota
 
-        elif opcion == 4:
-            print("Mostrando todas las notas...")
-            # <acción para mostrar notas>
+        SINO SI opcion = 4 ENTONCES
+            IMPRIMIR "Mostrando todas las notas..."
+            // Acción para mostrar notas
 
-        elif opcion == 5:
-            print("Calculando promedio general...")
-            # <acción para calcular promedio>
+        SINO SI opcion = 5 ENTONCES
+            IMPRIMIR "Calculando promedio general..."
+            // Acción para calcular promedio
 
-        elif opcion == 6:
-            print("Saliendo del sistema...")
+        SINO SI opcion = 6 ENTONCES
+            IMPRIMIR "Saliendo del sistema..."
 
-        else:
-            print("Opcion no valida. Intente de nuevo.")
+        SINO
+            IMPRIMIR "Opción no válida. Intente de nuevo."
+        FIN_SI
+    FIN_MIENTRAS
+	FIN_PROCEDIMIENTO
+
 
 ## Continuará proyecto...
